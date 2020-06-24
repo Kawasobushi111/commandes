@@ -1,0 +1,570 @@
+Camille@DESKTOP-QCRJ58U MINGW64 ~
+$ cd c :
+bash: cd: too many arguments
+
+Camille@DESKTOP-QCRJ58U MINGW64 ~
+$ cd
+
+Camille@DESKTOP-QCRJ58U MINGW64 ~
+$ cd c:
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c
+$ cd Repository
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository
+$ ls
+projet/
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository
+$ ĉd projet
+bash: ĉd: command not found
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository
+$ cd projet
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet
+$ git init
+Initialized empty Git repository in C:/Repository/projet/.git/
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git config --global user.name "Camille de Sancy"
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git config --global user.email c.sancy@interface3.b
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git config --global user.email c.sancy@interface3.be
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git commit
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git add test
+fatal: pathspec 'test' did not match any files
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git add guess.py
+fatal: pathspec 'guess.py' did not match any files
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git add test
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git commit -m "first commit"
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ ls
+index.html  skidrow.games.txt  test/
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git add index.html skidrow.games.txt test
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git commit
+[master (root-commit) 037fddb] ajout fichiers tests
+ 3 files changed, 28 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 skidrow.games.txt
+ create mode 100644 test/13122959_10153875901203283_4640882519171773540_o.jpg
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ ls
+index.html  skidrow.games.txt  test/
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git commit
+On branch master
+nothing to commit, working tree clean
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ cd test
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet/test (master)
+$ ls
+13122959_10153875901203283_4640882519171773540_o.jpg
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet/test (master)
+$ cd..
+bash: cd..: command not found
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet/test (master)
+$ cd.
+bash: cd.: command not found
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet/test (master)
+$ cd ..
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ ls
+index.html  skidrow.games.txt  test/
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ vim create.txt
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ ls
+create.txt  index.html  skidrow.games.txt  test/
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git add create.txt
+warning: LF will be replaced by CRLF in create.txt.
+The file will have its original line endings in your working directory
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   create.txt
+
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git commit
+[master e1dbf66] ceci est un commentaire
+ 1 file changed, 1 insertion(+)
+ create mode 100644 create.txt
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ ^ls
+bash: :s^ls: substitution failed
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ ls
+create.txt  index.html  skidrow.games.txt  test/
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ cd test
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet/test (master)
+$ ls
+13122959_10153875901203283_4640882519171773540_o.jpg
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet/test (master)
+$ cd ..
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ cd ..
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository
+$ ls
+projet/
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository
+$ git help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
+
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
+
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository
+$ git show
+fatal: not a git repository (or any of the parent directories): .git
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository
+$ ls
+projet/
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository
+$ cd projet
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git show
+commit e1dbf660a3d9f266dcf1b65532f2eccb03abf4e7 (HEAD -> master)
+Author: Camille de Sancy <c.sancy@interface3.be>
+Date:   Tue Jun 23 23:48:43 2020 +0200
+
+    ceci est un commentaire
+
+diff --git a/create.txt b/create.txt
+new file mode 100644
+index 0000000..81d1434
+--- /dev/null
++++ b/create.txt
+@@ -0,0 +1 @@
++test vim repo
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   skidrow.games.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git add skidrow.games.txt
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git commit -m essai
+[master 13186fd] essai
+ 1 file changed, 1 insertion(+)
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    create.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git add create.txt
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    create.txt
+
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git commit -m essai suppr
+error: pathspec 'suppr' did not match any file(s) known to git
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git commit -m suppression
+[master f8f812b] suppression
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 create.txt
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git add create.txt
+warning: LF will be replaced by CRLF in create.txt.
+The file will have its original line endings in your working directory
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git commit -m "creation is back"
+[master 9b4e320] creation is back
+ 1 file changed, 1 insertion(+)
+ create mode 100644 create.txt
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    skidrow.games.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        incroyable.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git add incroyable.txt
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git add skidrow.games.txt
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    skidrow.games.txt -> incroyable.txt
+
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ ls
+create.txt  incroyable.txt  index.html  test/
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet (master)
+$ git status
+fatal: failed to stat 'C:/Repository/projet': No such file or directory
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet
+$ cd ..
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository
+$ cd projet_pro
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_pro (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    skidrow.games.txt -> incroyable.txt
+
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_pro (master)
+$ git commit -m "rename skidrow"
+[master 8c73afc] rename skidrow
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename skidrow.games.txt => incroyable.txt (100%)
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_pro (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_pro (master)
+$ git remote add origin https://github.com/Kawasobushi111/projet_perso.git
+fatal: failed to stat 'C:/Repository/projet_pro': No such file or directory
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_pro
+$ git status
+fatal: failed to stat 'C:/Repository/projet_pro': No such file or directory
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_pro
+$ git status
+fatal: failed to stat 'C:/Repository/projet_pro': No such file or directory
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_pro
+$ git remote -v
+fatal: failed to stat 'C:/Repository/projet_pro': No such file or directory
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_pro
+$ git commit -m "essai"
+fatal: failed to stat 'C:/Repository/projet_pro': No such file or directory
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_pro
+$ cd..
+bash: cd..: command not found
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_pro
+$ cd ..
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository
+$ git init
+Initialized empty Git repository in C:/Repository/.git/
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository (master)
+$ ls
+projet_perso/
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository (master)
+$ cd projet_perso
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_perso (master)
+$ ls
+create.txt  incroyable.txt  index.html  test/
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_perso (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_perso (master)
+$ git remote add origin https://github.com/Kawasobushi111/projet_perso.git
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_perso (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_perso (master)
+$ git push --set-upstream origin master
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (17/17), 179.64 KiB | 14.97 MiB/s, done.
+Total 17 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), done.
+To https://github.com/Kawasobushi111/projet_perso.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_perso (master)
+$$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    incroyable.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        encoreplusincroyable.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_perso (master)
+$ git add incroyable.txt
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_perso (master)
+$ git add encoreplusincroyable.txt
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_perso (master)
+$ git commit -m "changement nom incroyable"
+[master 515dbb3] changement nom incroyable
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename incroyable.txt => encoreplusincroyable.txt (100%)
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_perso (master)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 251 bytes | 251.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Kawasobushi111/projet_perso.git
+   8c73afc..515dbb3  master -> master
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_perso (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_perso (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   create.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_perso (master)
+$ git add create.txt
+warning: LF will be replaced by CRLF in create.txt.
+The file will have its original line endings in your working directory
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_perso (master)
+$ git commit -m "change create"
+[master eb676b5] change create
+ 1 file changed, 1 insertion(+)
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_perso (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_perso (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 403 bytes | 403.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Kawasobushi111/projet_perso.git
+   515dbb3..eb676b5  master -> master
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository/projet_perso (master)
+$ cd ..
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository (master)
+$ git clone https://github.com/Kawasobushi111/bootstrap.git
+Cloning into 'bootstrap'...
+remote: Enumerating objects: 19, done.
+remote: Counting objects: 100% (19/19), done.
+remote: Compressing objects: 100% (18/18), done.
+remote: Total 19 (delta 2), reused 7 (delta 0), pack-reused 0
+Unpacking objects: 100% (19/19), 3.07 MiB | 1.03 MiB/s, done.
+
+Camille@DESKTOP-QCRJ58U MINGW64 /c/Repository (master)
+$ git pull
