@@ -1,0 +1,374 @@
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git branch design
+fatal: Not a valid object name: 'master'.
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        eso1644bsmall__w770.jpg
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git commit -m "image en plus"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        eso1644bsmall__w770.jpg
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git add eso1644bsmall__w770.jpg
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git commit -m "images en plus"
+[master (root-commit) 16d41cc] images en plus
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 eso1644bsmall__w770.jpg
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git branch design
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git remote add origin https://github.com/Kawasobushi111/git_classe.g
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git push -u origin master
+remote: Repository not found.
+fatal: repository 'https://github.com/Kawasobushi111/git_classe.g/' not found
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git remote add origin https://github.com/Kawasobushi111/git_classe.git
+fatal: remote origin already exists.
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git remote set-url git remote set-url
+fatal: No such remote 'git'
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git remote set-url origin https://github.com/Kawasobushi111/git_classe.git
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git remote -v
+origin  https://github.com/Kawasobushi111/git_classe.git (fetch)
+origin  https://github.com/Kawasobushi111/git_classe.git (push)
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 36.08 KiB | 18.04 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Kawasobushi111/git_classe.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git branch design
+fatal: A branch named 'design' already exists.
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git checkout design
+Switched to branch 'design'
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ git branch
+* design
+  master
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ git status
+On branch design
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ git add index.html
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ git add style.css
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ git commit -m "style"
+[design f163088] style
+ 2 files changed, 15 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ git status
+On branch design
+nothing to commit, working tree clean
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ git push -u origin design
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 538 bytes | 538.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'design' on GitHub by visiting:
+remote:      https://github.com/Kawasobushi111/git_classe/pull/new/design
+remote:
+To https://github.com/Kawasobushi111/git_classe.git
+ * [new branch]      design -> design
+Branch 'design' set up to track remote branch 'design' from 'origin'.
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ git k
+git: 'k' is not a git command. See 'git --help'.
+
+The most similar commands are
+        am
+        fsck
+        gc
+        mv
+        p4
+        rm
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ gitk
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ git status
+On branch design
+Your branch is up to date with 'origin/design'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ git add style.css
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ git commit -m "color"
+[design 49089c6] color
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 276 bytes | 276.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Kawasobushi111/git_classe.git
+   f163088..49089c6  design -> design
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ git status
+On branch design
+Your branch is up to date with 'origin/design'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ git add index.html
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ git commit -m "color red"
+[design cc7cb6c] color red
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ git status
+On branch design
+Your branch is ahead of 'origin/design' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 358 bytes | 358.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Kawasobushi111/git_classe.git
+   49089c6..cc7cb6c  design -> design
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ sit status
+bash: sit: command not found
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        login.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git ass login.html
+git: 'ass' is not a git command. See 'git --help'.
+
+The most similar commands are
+        add
+        askpass
+        lfs
+        stash
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git add.html
+git: 'add.html' is not a git command. See 'git --help'.
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git add login.html
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git commit -m "login"
+[master de53393] login
+ 1 file changed, 5 insertions(+)
+ create mode 100644 login.html
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git checkout design
+Already on 'design'
+Your branch is up to date with 'origin/design'.
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ gitk
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (design)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 335 bytes | 335.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+git sTo https://github.com/Kawasobushi111/git_classe.git
+   16d41cc..de53393  master -> master
+t
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git log
+commit de533938fcfa8d81055b7e21135f587962f53d85 (HEAD -> master, origin/master)
+Author: kawasobushi111 <de.sancy.camille@gmail.com>
+Date:   Wed Jun 24 15:39:13 2020 +0200
+
+    login
+
+commit 16d41ccfeab3b3c178608540c0664e48f38ef2da
+Author: kawasobushi111 <de.sancy.camille@gmail.com>
+Date:   Wed Jun 24 14:28:15 2020 +0200
+
+    images en plus
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git merge design -m "changement branche"
+Merge made by the 'recursive' strategy.
+ index.html | 12 ++++++++++++
+ style.css  |  3 +++
+ 2 files changed, 15 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 296 bytes | 296.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Kawasobushi111/git_classe.git
+   de53393..fc18137  master -> master
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git branch
+  design
+* master
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
+$ git add css/style.css
+fatal: pathspec 'css/style.css' did not match any files
+
+c.sancy@Wad-12 MINGW64 /c/Repo/git_classe (master)
